@@ -1,51 +1,105 @@
+:root {
+  --primary: #4155a8;
+  --secondary: #d9d9d9;
+  --thirdly: #787777;
+}
+
 .Header {
-    color: #4155A8;
-    text-align: center;
-    border-bottom: #4155A8 2px solid;
-    margin-bottom: 48px;
+  color: var(--primary);
+  text-align: center;
+  border-bottom: #4155a8 2px solid;
+  margin-bottom: 48px;
 }
 
 /*-----MAIN-----*/
 
-.Calc-container{
-    width: 575px;
-    height: 650px;
-    background-color: #4155A8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 24px;
-    
+.Calc-container {
+  width: 575px;
+  height: 650px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 24px;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.3);
+  padding: 16px;
 }
 
-.Display-Screen{
-    background-color: #D9D9D9;
-    width: 500px;
-    height: 100px;
-    border-radius: 24px;
+.Display-Screen {
+  background-color: var(--secondary);
+  width: 500px;
+  height: 100px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 24px;
+  font-size: 60px;
+  font-weight: 300;
+}
+.Display-Screen span {
+  font-size: 24px;
+  color: #4b4b4b;
 }
 
-.Button-Grid{
-    background-color: #D9D9D9;
-    width: 500px;
-    height: 440px;
-    border-radius: 24px;
+.Button-Grid {
+  background-color: var(--secondary);
+  width: 500px;
+  height: 450px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-direction: column;
 }
 
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  font-size: 50px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.operators {
+  display: flex;
+  width: 100%;
+}
+.operators button {
+  flex: 1 1 0%;
+  background-color: var(--thirdly);
+  font-weight: 700;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.33%;
+  background-color: var(--secondary);
+}
 /*-----FOOTER-----*/
 
 .Footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #4155A8;
-    text-align: center;
-    border-top: #4155A8 2px solid;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--primary);
+  text-align: center;
+  border-top: var(--primary) 2px solid;
+  margin-top: 40px;
 }
 
-.Logo{
-    width: 80px;
-    padding-right: 50px;
-  }
+.Logo {
+  width: 175px;
+  padding-right: 50px;
+}

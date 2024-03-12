@@ -1,17 +1,17 @@
-import Main from './Components/Main';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import './App.css';
+import Main from "./Components/Main";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div>
       <Header />
-      <div className='Main-container'>
-        <Main/>
+      <div className="Main-container">
+        <Main />
       </div>
-      <Footer/>
-    </div> 
+      <Footer />
+    </div>
   );
 }
 
